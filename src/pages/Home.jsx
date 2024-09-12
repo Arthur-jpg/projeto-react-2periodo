@@ -3,6 +3,7 @@ import Base from "./Base"
 import { auth } from "../config/Firebase";
 import { useEffect } from "react";
 import Ayrton from "../components/Ayrton/Ayrton";
+import ParteAzul from "../components/ParteAzul/ParteAzul";
 
 
 
@@ -21,13 +22,8 @@ const Home = () => {
 
   return (
     <Base>
-      <h1>
-     Jogadores do Botafogo
-      </h1>
-      <h5>
-        Esse time está atualmente em primeiro lugar no brasileirão ola
-      </h5>
-      <Ayrton/>
+      <ParteAzul>
+      </ParteAzul>
     </Base>
 
   )
