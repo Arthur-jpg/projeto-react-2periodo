@@ -4,12 +4,12 @@ import { TopPart } from "./Style";
 const ParteAzul = () => (
   <TopPart>
     <div id="titulo">
-      <h5>
+      <p>
         Projetos de Alunos
-      </h5>
-      <h6>
+      </p>
+      <p>
         Navegue pelos projetos realizados por alunos da Instituição Brasileira de Mercados e Capitais
-      </h6>
+      </p>
 
     </div>
     <div id="topnav">
