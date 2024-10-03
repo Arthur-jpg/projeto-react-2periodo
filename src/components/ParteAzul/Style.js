@@ -2,10 +2,10 @@ import styled from "styled-components"
 
 const TopPart = styled.header `
   background-color: rgb(0, 37, 85);
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   #topnav {
     margin-top: 20px;
     display: flex;
@@ -18,12 +18,17 @@ const TopPart = styled.header `
     gap: 10px;
     
   }
+  #tituloreal {
+    font-weight: bold;
+    font-size: 54px;
+  }
+  #texto {
+    font-size: 18px;
+    width: 450px;
+    font-weight: lighter;
+  }
   p {
     color: white;
-    font-size: 11px;
-  }
-  input {
-    border-radius: 7px;
   }
 
 `
