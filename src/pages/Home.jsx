@@ -4,6 +4,7 @@ import { auth } from "../config/Firebase";
 import { useEffect } from "react";
 import Ayrton from "../components/Ayrton/Ayrton";
 import ParteAzul from "../components/ParteAzul/ParteAzul";
+import Cards from "../components/Cards/Cards";
 
 
 
@@ -24,6 +25,7 @@ const Home = () => {
     <Base>
       <ParteAzul>
       </ParteAzul>
+      <Cards></Cards>
     </Base>
 
   )
