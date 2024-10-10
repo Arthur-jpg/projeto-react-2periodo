@@ -1,34 +1,29 @@
-import { onAuthStateChanged } from "firebase/auth"
-import Base from "./Base"
+import { useEffect, useState } from "react";
+import Base from "./Base";
+import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../config/Firebase";
-import { useEffect } from "react";
-import Ayrton from "../components/Ayrton/Ayrton";
 import ParteAzul from "../components/ParteAzul/ParteAzul";
-import Cards from "../components/Cards/Cards";
-
-
+import Cartao from "../components/Cartao/Cartao";
 
 const Home = () => {
-
-  /* useEffect(()=> {
-    onAuthStateChanged(auth, (user)=> {
-      if (user) {
-        window.sessionStorage.setItem("accessToken", user.accessToken);
-      } else {
-        window.sessionStorage.removeItem("accessToken");
-      }
-    })
-  },[]) */
-  
+  const listaDeCartoes = [
+    { titulo: "Projeto 1", texto: "Descrição do Projeto 1" },
+    { titulo: "Projeto 2", texto: "Descrição do Projeto 2" },
+    { titulo: "Projeto 3", texto: "Descrição do Projeto 3" },
+    { titulo: "Projeto 4", texto: "Descrição do Projeto 4" },
+  ];
 
   return (
     <Base>
-      <ParteAzul>
-      </ParteAzul>
-      <Cards></Cards>
+      <ParteAzul
+        name="Projeto de Alunos"
+        texto="Navegue pelos projetos realizados por alunos da Instituição Brasileira de Mercados e Capitais"
+      />
+      {listaDeCartoes.map((item, index) => (
+        <Cartao key={index} titulo={item.titulo} texto={item.texto} />
+      ))}
     </Base>
+  );
+};
 
-  )
-}
-
-export default Home
+export default Home;
