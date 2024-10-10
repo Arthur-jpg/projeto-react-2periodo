@@ -16,7 +16,6 @@ const TopPart = styled.header `
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 50%
     
   }
   #tituloreal {
@@ -31,7 +30,39 @@ const TopPart = styled.header `
   p {
     color: black;
   }
-
+  #Hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img {
+    height: 700px
+  }
+  #HeroEsquerda {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  button{
+    border-radius: 20px;
+    padding: 10px
+  }
+  #botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 40px;
+  }
+  #botao1{
+    background-color: #F5AC00;
+    border: 0
+  }
+  #botao2{
+    background-color: white;
+    border: 2px solid #F5AC00
+  }
 `
 
 
