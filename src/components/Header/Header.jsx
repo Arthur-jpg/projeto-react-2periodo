@@ -14,6 +14,8 @@ const Header = () => (
         <Link to="/fotos">Projetos</Link>
         <Link to="/sobrenos">Sobre o Projeto</Link>
         <Link to="/atletas">Atletas</Link>
+        <Link to="/fotos">Fotos</Link>
+        
         
         { window.sessionStorage.getItem('accessToken')
         ? <Link to="/logout">Logout</Link>
